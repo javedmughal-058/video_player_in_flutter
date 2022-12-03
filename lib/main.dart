@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
 
     _controller = VideoPlayerController.network(
-        'https://youtu.be/P3l9o31AoeQ')
+        'https://www.fluttercampus.com/video.mp4')
       ..initialize().then((_) {
         // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
         setState(() {});
