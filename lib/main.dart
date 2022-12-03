@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: _controller.value.isInitialized ?
+      body:
       Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -125,10 +125,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           )
         ],
-      ) :
-      Center(
-          child: CircularProgressIndicator(color: Theme.of(context).primaryColor,)
-      ),
+      ) ,
+
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() {
