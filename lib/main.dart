@@ -79,12 +79,12 @@ class _MyHomePageState extends State<MyHomePage> {
             child: VideoPlayer(_controller),
           ),
           Container(
-            margin: EdgeInsets.only(top: 10),
+            margin: const EdgeInsets.only(top: 10),
             alignment: Alignment.centerLeft,
             child: Text("Duration: " + getVideoPosition()+" / " +  videoDuration(_controller.value.duration)),
           ),
           Container(
-              margin: EdgeInsets.only(top: 10),
+              margin: const EdgeInsets.only(top: 10),
               child: VideoProgressIndicator(
                   _controller,
                   allowScrubbing: true,
@@ -114,13 +114,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               IconButton(
                   onPressed: (){
-                    _controller.seekTo(Duration(seconds: 0));
+                    _controller.seekTo(const Duration(seconds: 0));
 
                     setState(() {
 
                     });
                   },
-                  icon:Icon(Icons.stop)
+                  icon:const Icon(Icons.stop)
               )
             ],
           )
